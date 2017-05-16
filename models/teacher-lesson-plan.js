@@ -28,7 +28,7 @@ const schema = new Schema({
   lesson: Number, // 课次
   teacher: String, // 上课老师
   lessonAt: Date, // 上课时间
-  createAt: Date,
+  createAt: { type: Date, default: Date.now },
   updateAt: Date,
   createBy: String,
 });

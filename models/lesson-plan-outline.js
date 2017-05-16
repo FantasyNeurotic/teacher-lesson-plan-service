@@ -12,7 +12,7 @@ const schema = new Schema({
       content: String, // 重点
     }],
   }],
-  createAt: Date,
+  createAt: { type: Date, default: Date.now },
   updateAt: Date,
   createBy: String,
 });
